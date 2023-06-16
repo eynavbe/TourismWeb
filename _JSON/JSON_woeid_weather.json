@@ -1,0 +1,581 @@
+[
+    {
+        "Id": "28555",
+        "Name": "ירושלים",
+        "Pic_Url": "0008394_jerusalem_250.jpeg",
+        "FAQ": "jerusalem",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "28609",
+        "Name": "תל אביב",
+        "Pic_Url": "0008421_tel-aviv-jaffa_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "28548",
+        "Name": "אילת",
+        "Pic_Url": "0008395_eilat_250.jpeg",
+        "FAQ": "",
+        "Region": "אילת"
+    },
+    {
+        "Id": "28613",
+        "Name": "חיפה",
+        "Pic_Url": "0008423_haifa_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28614",
+        "Name": "טבריה",
+        "Pic_Url": "0008425_tiberias_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "49366",
+        "Name": "ים המלח",
+        "Pic_Url": "0025723_the-dead-sea_250.jpeg",
+        "FAQ": "",
+        "Region": "ים המלח"
+    },
+    {
+        "Id": "28712",
+        "Name": "עכו",
+        "Pic_Url": "0008553_acre-akko_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28556",
+        "Name": "נצרת",
+        "Pic_Url": "0008419_nazareth_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28615",
+        "Name": "קיסריה",
+        "Pic_Url": "0008427_caesarea-keysarya_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28620",
+        "Name": "צפת",
+        "Pic_Url": "0008433_safed-tsefat_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28705",
+        "Name": "מצפה רמון ",
+        "Pic_Url": "0008546_mitspe-ramon_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "30567",
+        "Name": "בית שאן",
+        "Pic_Url": "0008665_beit-shean_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28717",
+        "Name": "עין גדי",
+        "Pic_Url": "0008559_ein-gedi_250.jpeg",
+        "FAQ": "",
+        "Region": "ים המלח"
+    },
+    {
+        "Id": "28738",
+        "Name": "הרצליה ",
+        "Pic_Url": "0008598_hertzeliya_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "30547",
+        "Name": "אשקלון ",
+        "Pic_Url": "0008638_ashkelon_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28714",
+        "Name": "נתניה",
+        "Pic_Url": "0008555_netanya_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "28709",
+        "Name": "ראש פינה",
+        "Pic_Url": "0008550_rosh-pina_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28745",
+        "Name": "כפר נחום",
+        "Pic_Url": "0008602_kfar-nakhum_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30551",
+        "Name": "חצור הגלילית ",
+        "Pic_Url": "0008643_hazor-haglilit_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30559",
+        "Name": "חולון",
+        "Pic_Url": "0008663_holon_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "28706",
+        "Name": "תל חי",
+        "Pic_Url": "0008547_tel-hai_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28741",
+        "Name": "נהלל ",
+        "Pic_Url": "0008601_nahalal_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28707",
+        "Name": "רמלה",
+        "Pic_Url": "0008548_ramla_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "28700",
+        "Name": "זכרון יעקב ",
+        "Pic_Url": "0008506_zikhron-yaakov_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30557",
+        "Name": "אשדוד",
+        "Pic_Url": "0008661_ashdod_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28740",
+        "Name": "כפר תבור",
+        "Pic_Url": "0008600_kfar-tavor_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28746",
+        "Name": "גוש חלב",
+        "Pic_Url": "0008603_gush-halav_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30593",
+        "Name": "בני ברק ",
+        "Pic_Url": "0009533_bnei-brak_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "28616",
+        "Name": "באר שבע",
+        "ShortDescription": "אזור: דרום",
+        "Pic_Url": "0008429_beer-sheva_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "38087",
+        "Name": "הכפר עספיא ",
+        "Pic_Url": "0011110_isfiya_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30596",
+        "Name": "בת-ים ",
+        "Pic_Url": "0009535_bat-yam_250.jpeg",
+        "FAQ": "",
+        "Region": "תל אביב והמרכז"
+    },
+    {
+        "Id": "30569",
+        "Name": "אבו גוש",
+        "Pic_Url": "0009531_abu-gosh_250.jpeg",
+        "FAQ": "",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "28739",
+        "Name": "נהריה",
+        "Pic_Url": "0008599_nahariya_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30552",
+        "Name": "מטולה ",
+        "Pic_Url": "0008656_metula_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30595",
+        "Name": "בית לחם הגלילית ",
+        "Pic_Url": "0009534_bethlehem-of-the-galilee_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38113",
+        "Name": "דאלית אל-כרמל",
+        "Pic_Url": "0011300_daliyat-el-carmel_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30554",
+        "Name": "מעלות-תרשיחא ",
+        "Pic_Url": "0008658_maalot-tarshiha_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28703",
+        "Name": "יד מרדכי",
+        "Pic_Url": "0008511_yad-moredechai_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28716",
+        "Name": "קרית שמונה ",
+        "Pic_Url": "0008558_kiryat-shmona_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38077",
+        "Name": "יאנוח",
+        "Pic_Url": "0011102_yanuh_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30545",
+        "Name": "נווה שלום ",
+        "Pic_Url": "0008636_neveh-shalom-wahat-al-salam_250.jpeg",
+        "FAQ": "",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "30558",
+        "Name": "המושבה כנרת ",
+        "Pic_Url": "0008662_kinneret-moshava_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28701",
+        "Name": "שדה בוקר ",
+        "Pic_Url": "0008509_sde-boker_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28702",
+        "Name": "ערד ",
+        "Pic_Url": "0008510_arad_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28713",
+        "Name": "קצרין",
+        "Pic_Url": "0008554_katzerin_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28733",
+        "Name": "עין הוד",
+        "Pic_Url": "0008592_ein-hod_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38085",
+        "Name": "חורפיש",
+        "Pic_Url": "0011095_hurfeish_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30592",
+        "Name": "כפר כנא ",
+        "Pic_Url": "0009532_cana_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30566",
+        "Name": "כפר כמא",
+        "Pic_Url": "0008664_kfar-kama_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38075",
+        "Name": "ג'ת",
+        "Pic_Url": "0011077_jatt_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38082",
+        "Name": "מע'אר",
+        "Pic_Url": "0011099_maghar_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38084",
+        "Name": "סמיע",
+        "Pic_Url": "0011093_samia_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38078",
+        "Name": "ירכא",
+        "Pic_Url": "0011071_yarka_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38088",
+        "Name": "הכפר ראמה",
+        "Pic_Url": "0011112_rameh_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "28735",
+        "Name": "פקיעין ",
+        "Pic_Url": "0008594_pekiin_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38071",
+        "Name": "אבו סנאן ",
+        "Pic_Url": "0011097_abu-snan_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38073",
+        "Name": "בית ג'אן",
+        "Pic_Url": "0011039_beit-jann_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30555",
+        "Name": "הרדוף ",
+        "Pic_Url": "0008659_harduf_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38081",
+        "Name": "כסרא",
+        "Pic_Url": "0011081_kisra_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38083",
+        "Name": "סאג'ור ",
+        "Pic_Url": "0011106_sajur_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38089",
+        "Name": "שפרעם",
+        "Pic_Url": "0011114_shefa-amr_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38651",
+        "Name": "דגניה א'",
+        "Pic_Url": "0013459_degania_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30553",
+        "Name": "חברון",
+        "Pic_Url": "0008657_hebron_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "38074",
+        "Name": "ג'וליס",
+        "ShortDescription": "אזור: צפון",
+        "Pic_Url": "0011047_julis_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38086",
+        "Name": "עין אל-אסד ",
+        "Pic_Url": "0011100_ein-al-assad_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "38090",
+        "Name": "ריחאניה",
+        "Pic_Url": "0011115_rehaniya_250.jpeg",
+        "FAQ": "ערים בישראל",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30549",
+        "Name": "חניתה ",
+        "Pic_Url": "0008642_hanita_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30568",
+        "Name": "בת שלמה",
+        "Pic_Url": "0008666_bat-shlomo_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30546",
+        "Name": "כפר יאסיף",
+        "Pic_Url": "0008637_kfar-yasif_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30617",
+        "Name": "הערבה ",
+        "Pic_Url": "0009581_arava_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "30619",
+        "Name": "הכינרת ",
+        "Pic_Url": "0009589_sea-of-galilee-lake-kineret_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30621",
+        "Name": "הגליל ",
+        "Pic_Url": "0009590_the-galilee_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30616",
+        "Name": "הרי ירושלים ",
+        "Pic_Url": "0009580_the-jerusalem-hills_250.jpeg",
+        "FAQ": "",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "30603",
+        "Name": "מדבר יהודה",
+        "Pic_Url": "0009560_the-judean-desert_250.jpeg",
+        "FAQ": "",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "30608",
+        "Name": "השפלה ",
+        "Pic_Url": "0009579_the-lowlands_250.jpeg",
+        "FAQ": "",
+        "Region": "ירושלים והסביבה"
+    },
+    {
+        "Id": "30600",
+        "Name": "נגב ",
+        "Pic_Url": "0009539_the-negev-desert_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "30598",
+        "Name": "עמק עובדה והרי אילת ",
+        "Pic_Url": "0009537_the-uvda-valley-and-eilat-mountains_250.jpeg",
+        "FAQ": "",
+        "Region": "אילת"
+    },
+    {
+        "Id": "30606",
+        "Name": "חבל הבשור",
+        "Pic_Url": "0009573_habsore_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "30597",
+        "Name": "עמק יזרעאל ",
+        "ShortDescription": "אזור: צפון",
+        "Pic_Url": "0009536_jezreel-valley_250.jpeg",
+        "FAQ": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30625",
+        "Name": "אזור ניצנה ",
+        "ShortDescription": "אזור: דרום",
+        "Pic_Url": "0009594_nitzana_250.jpeg",
+        "FAQ": "",
+        "Region": "דרום"
+    },
+    {
+        "Id": "28547",
+        "Name": "רמת הגולן",
+        "Pic_Url": "0008345_the-golan-heights_250.jpeg",
+        "woeid": "",
+        "Region": "צפון"
+    },
+    {
+        "Id": "30599",
+        "Name": "עמק החולה",
+        "Pic_Url": "0009538_the-hula-valley_250.jpeg",
+        "woeid": "",
+        "Region": "צפון"
+    }
+    
+]
