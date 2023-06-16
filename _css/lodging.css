@@ -1,0 +1,341 @@
+.lodgingAll{
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    min-height: 200px;
+    overflow: hidden;
+    /* border: 3px solid black; */
+}
+.h2{
+    text-align: center;
+}
+.lodgingAll.lodging{
+    float: left;
+    border: 3px solid black;
+    width: 80%;
+    position: relative;
+    
+}
+
+.boxLodgingHotels{
+    width: 75%; 
+    min-height: 250px; 
+    padding: 5px;
+    position: relative;
+    border: 3px solid black;
+}
+.boxLodgingHotels .boxLodgingHotelsImg{
+    width: 25%; 
+    height: 80%;
+    margin-top: 15px;
+    float: right;
+    /* border: 3px solid black; */
+}
+.boxLodgingHotelsImg .boxLodgingHotelsImgMore{
+    width: 100%;
+    height: 100%;
+}
+.boxLodgingHotelsText{
+    /* border: 3px solid black; */
+    float: left;
+    width: 68%; 
+    height: 98%;
+     /* margin-left: 3px; */
+    padding: 10px; 
+    text-align: right;
+}
+.boxLodgingHotelsName{
+    font-size: 28px;
+}
+.boxLodgingHotelsDistance{
+    text-align: right;
+    margin-bottom:5px; 
+}
+.boxLodgingHotelsSymbolsWifi{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingHotelsSymbolsParking{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingHotelsSymbolsAccessibility{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+
+.boxLodgingHotelsSymbolslocation{
+    width: 20px;
+}
+.boxLodgingHotelsBtn{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingHotelsBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+
+.boxLodgingBandB{
+    width: 75%; 
+    min-height: 250px; 
+    padding: 5px;
+    position: relative;
+    border: 3px solid black;
+}
+.boxLodgingBandB .boxLodgingBandBImg{
+    width: 25%; 
+    height: 80%;
+    margin-top: 15px;
+    float: right;
+    /* border: 3px solid black; */
+}
+.boxLodgingBandBImg .boxLodgingBandBImgMore{
+    width: 100%;
+    height: 100%;
+}
+.boxLodgingBandBText{
+    /* border: 3px solid black; */
+    float: left;
+    width: 68%; 
+    height: 98%;
+     /* margin-left: 3px; */
+    padding: 10px; 
+    text-align: right;
+}
+.BandBCityCircleRate{
+    height: 35px;
+  width: 35px;
+    /* position: absolute;
+  top: 10px;
+  left: 10px; */
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+}
+.BandBCityCircleRateText{ 
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 18px;
+}
+.boxLodgingBandBDistance{
+    text-align: right;
+    margin-bottom:5px; 
+}
+.boxLodgingBandBSymbolsWifi{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingBandBSymbolsParking{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingBandBSymbolsAccessibility{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+
+.boxLodgingBandBSymbolslocation{
+    width: 20px;
+}
+.boxLodgingBandBBtn{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingBandBBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+
+.boxLodgingHostels{
+    width: 75%; 
+    min-height: 250px; 
+    padding: 5px;
+    position: relative;
+    border: 3px solid black;
+}
+.boxLodgingHostels .boxLodgingHostelsImg{
+    width: 25%; 
+    height: 80%;
+    margin-top: 15px;
+    float: right;
+    /* border: 3px solid black; */
+}
+.boxLodgingHostelsImg .boxLodgingHostelsImgMore{
+    width: 100%;
+    height: 100%;
+}
+.boxLodgingHostelsText{
+    /* border: 3px solid black; */
+    float: left;
+    width: 68%; 
+    height: 98%;
+     /* margin-left: 3px; */
+    padding: 10px; 
+    text-align: right;
+}
+.boxLodgingHostelsDistance{
+    text-align: right;
+    margin-bottom:5px; 
+}
+.boxLodgingHostelsSymbolsWifi{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingHostelsSymbolsParking{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+.boxLodgingHostelsSymbolsAccessibility{
+    /* margin-top: 5px; */
+    width: 30px;
+    margin: 10px;
+}
+
+.boxLodgingHostelsSymbolslocation{
+    width: 20px;
+}
+.addToFavoritesBox{
+    position: absolute;
+    Top:30px;
+    left: 30px;
+}
+.boxLodgingHostelsBtn{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingHostelsBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+
+.filtering{
+    float: right;
+    /* border: 3px solid black; */
+    text-align: right;
+    width: 20%;
+    padding: 3px;
+    cursor: context-menu;
+}
+.addFilteringBox{
+    float: right;
+    /* border: 3px solid black; */
+    text-align: right;
+    width: 100%;
+    padding: 3px;
+}
+.attractionsFiltering{
+    float: right;
+    /* border: 3px solid black; */
+    text-align: right;
+    width: 100%;
+    padding: 3px;
+}
+input[type=checkbox] {
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+  }
+  label {
+    display: block;
+    overflow: hidden;
+    width: 120px;
+  }
+ 
+#back2Top {
+    width: 40px;
+    /* line-height: 40px; */
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+.prevNext{
+    float: left;
+    width: 75%;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+  }
+  
+  
+  .next {
+    /* position: absolute; */
+    /* right: 50%; */
+    /* right: 0; */
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    /* position: absolute; */
+    /* right: 52%; */
+    background-color: rgba(0,0,0,0.8);
+  }

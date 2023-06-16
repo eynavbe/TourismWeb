@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+    <link rel="stylesheet" href="_css/header.css">
+    <link rel="stylesheet" href="_css/main.css">
+    <!-- <link rel="stylesheet" href="map.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (max-width:609px)" href="_css/wedPhone.css">
+    <!-- <script src="_js/picMain.js"></script> -->
+    <script src="_js/jquery-3.3.1.min.js"></script>
+    <script src="_js/nav_transparent.js"></script>
+    <script src="_js/mainEffect.js"></script>
+
+    <script src="_js/citiesMain.js"></script>
+    <script src="_js/citiesAjax.js"></script>
+    <script src="_js/mainCitiesCreate.js"></script>
+    <script src="_js/findThisCityIndex.js"></script>
+
+    <script src="_js/weatherAjax.js"></script>
+    <script src="_js/weatherCreate.js"></script>
+    <script src="_js/weather.js"></script>
+    <script src="_js/weatherPagination.js"></script>
+
+    <script src="_js/tracksMain.js"></script>
+    <script src="_js/tracksCreate.js"></script>
+    <script src="_js/tracksAjax.js"></script>
+    <script src="_js/tracksPagination.js"></script>
+    <script src="_js/tracksMainSmall.js"></script>
+
+    <script src="_js/lodgingAjax.js"></script>
+    <script src="_js/lodgingMainCreate.js"></script>
+    <script src="_js/lodgingMainHotels.js"></script>
+    <script src="_js/lodgingMainBandB.js"></script>
+    <script src="_js/lodgingMainHostels.js"></script>
+    
+    <script src="_js/addToFavorites.js"></script>
+    <script src="_js/chat.js"></script>
+</head>
+<body>
+    <div class="body" id="id_body">
+    <nav>
+        <div class="navMain" id="id_navMain">
+            <div class="search">
+                <input id="id_input" type="text" placeholder="Enter your search...">
+                <button id="id_bt_search">
+                <img  src="_images/glass.png">
+                </button>
+            </div>
+            <a class="homeNav" href="main.html">דף הבית</a>
+            <div class="dropdown">
+                    <button class="class_area" id="id_area"> אזורים
+                        <i id="id_down" class="down"></i>
+                        </button>
+        
+                    <div class="dropdown-content">
+                        <a href="north.html">צפון</a>
+                        <a href="telAvivAndCentral.html">מרכז</a>
+                        <a href="jerusalemAndSurroundingArea.html">ירושלים והסביבה</a>
+                        <a href="theDeadSea.html">ים המלח</a>
+                        <a href="south.html">דרום</a>
+                        <a href="eilat.html">אילת</a>
+                    </div>
+                </div>
+            <a href="cities.html">ערים</a>
+            <a href="lodging.html">מקומות לינה</a>
+            <div style='padding-top:0;' class="favorites" id="id_favorites">
+                <a onclick="openFavorites()"><span style='font-size:180%;color:yellow;padding-top:0;' onclick="openFavorites()">&starf;</span> מועדפים</a>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="webPhoneNav()">&#9776;</a>        
+        </div>
+    </nav>
+    <div id="id_sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeFavorites()">&times;</a>
+        <div class="favoritesIn">
+            <h2 style="color:white;text-align: center;">מועדפים</h2>
+            <img class="favoriteInTrash" src="_images/trash.jpg" title="למחוק הכל" style='width: 20px;display: block;margin-left: auto;margin-right: auto;' onclick="deleteAllFavorites()">
+            <br>
+            <table style="color:white;text-align:right;" class="favoritesInTable" id="id_favoritesInTable">
+                
+            </table>
+        </div>
+      </div>       
+    <header>           
+        <div class="header">
+            <div class="strip">
+                <div class="stripPic">
+                    <div class="image_caption" >
+                        <h1 style="font-family: 'Cousine', monospace;">ברוכים הבאים לאתר התיירות בישראל</h1>
+                        <p>
+                            כאן תוכלו למצוא כמה נושאים שעשויים לעניין אותכם. 
+                        </p>
+                        <p>
+                                תוכלו להישתמש באתר גם מהטלפון
+                        </p>
+                        <h2>בילוי נעים</h2>
+                    </div>  
+                </div>
+            </div>
+        </div> 
+        <div class="messageMoved">
+            <h3>!!!שלום וברוכים הבאים לאתר שלי, אתם נמצאים כרגע בדף הראשי, תהנו</h3>
+        </div>
+    </header>   
+
+                <!-- <div class="strip">
+                        <div class="stripPic">
+                                <img id="id_img" src="_images/picMain1.jpg" width="100%" height="450">
+                                <div class="image_caption">
+                                        <h1>ברוכים הבאים לאתר התיירות בישראל</h1>
+                                        <p>
+                                            כאן תוכלו למצוא כמה נושאים שעשויים לעניין אותכם. 
+                                        </p>
+                                        <p>
+                                                נא תישתמשו בשירותים השונים שמוצגים באתר
+                                        </p>
+                                        <h3>בילוי נעים</h3>
+                                    </div>  
+                            </div>
+                              <a class="prev" onclick="countP(-1)">&#10094;</a>
+                              <a class="next" onclick="countP(1)">&#10095;</a>
+                         
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="countI(0)"></span> 
+              <span class="dot" onclick="countI(1)"></span> 
+              <span class="dot" onclick="countI(2)"></span> 
+              <span class="dot" onclick="countI(3)"></span> 
+            </div> -->
+    <main>
+        <div class="main">
+            <div class="video"><h3 style="font-family: Secular One, sans-serif;">הצצה לנופים היפים של ישראל</h3>
+                <video id="myVideo" oncanplay="playVid()" width="500" height="400" autoplay controls muted loop>                      
+                    <source src="_video/video.mp4"> 
+                </video>
+            </div>
+            
+            <script>
+                var vid= document.getElementById("myVideo");
+                window.onload=function(){}
+                function playVid(){
+                    vid.play();
+                }
+            </script>
+            
+           
+            <div class="weather_recommendation" ><h3 style="font-family: Secular One, sans-serif;">המלצת מזג האוויר - מזג אוויר מקסים לטיול ב</h3>
+                
+                    <div class="strip" id="id_weather_recommendation"></div> 
+                    <a class="prev" onclick="countPW(-1)">&#10094;</a>
+                    <a class="next" onclick="countPW(1)">&#10095;</a>
+            </div>  
+
+            
+            
+            <div class="map">
+                <h2 style="font-family: Secular One, sans-serif;">מפת ארץ ישראל</h2>
+                <h5 class="mapH5" style="font-family: Secular One, sans-serif;">למידע נוסף ללחוץ על החלק הרצוי במפה</h5>
+            <img src="_images/map1.jpg" usemap="#map" class="mapPic">
+            <map name="map">
+                
+                <area id="id1" shape="poly" coords=" 361,39,372,43,396,30,419,51,451,56,468,77,456,106,435,122,396,132,379,139,329,97,368,79" href="north.html" alt="צפון" title="צפון">
+                <area id="id2" shape="poly" coords="352,37,363,72,237,132,224,88" alt="תל אביב והסביבה" href="telAvivAndCentral.html" title="תל אביב והסביבה">
+                <area id="id3" shape="poly" coords="324,99,366,139,289,194,253,181,238,137" alt="ירושלים והסביבה" href="jerusalemAndSurroundingArea.html" title="ירושלים והסביבה">
+                <area id="id4" shape="poly" coords="253,184,284,197,218,236,189,229" alt="ים המלח" href="theDeadSea.html" title="ים המלח">
+                <area shape="poly" coords="212,88,248,179,185,226,63,237,169,84" alt="דרום" href="south.html" title="דרום">
+                <area shape="poly" coords="205,239,19,313,6,303,56,241,182,232" alt="אילת"  href="eilat.html" title="אילת">
+            </map>
+            </div>
+            <div class="trackM" id="id_trackM">
+                <div class="boxTrack" id="id_boxTrack"></div>
+                <div class="boxTrackSmallRow" id="id_boxTrackSmallRow"></div>
+            </div>
+            <div class="citiesM" id="id_citiesM"><h3 style="font-family: Secular One, sans-serif;">ערים</h3>
+                <div class="moreCities inline"><a style="font-family: 'Suez One', serif;" href="cities.html">עוד ערים</a></div>
+            </div>
+            <div class="lodgingM" id="id_lodgingM"><h3 class="lodgingMH3" style="font-family: Secular One, sans-serif;">לינה</h3>
+                <div class="moreLodging inline"><a style="font-family: 'Suez One', serif;" href="lodging.html">עוד מקומות לינה</a></div>
+            </div>
+            </div>
+            <i class="material-icons open-button" style="font-size:48px;color:red" onclick="openForm()" > &#xe0b7;</i>
+            <div class="chat-popup" id="myForm">
+                <div class="form-container">
+                    <h3 style="text-align: right;">צ'אט</h3>
+                    <div class="containerAll" id="id_containerAll">
+                        <div class="containerBig1" id="id_containerBig1">
+                            </div>
+                            <div class="containerBig2" id="id_containerBig2">
+                            </div>
+                    </div>
+                    
+                    <label for="msg"><b style="text-align: right;" >הודעה</b></label>
+                    <textarea id="id_textarea" style="text-align: right;" placeholder="...הקלד הודעה" name="msg" required></textarea>
+
+                    <button class="btn" onclick="sendForm()">שלח</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">סגור</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edgeappend">
+    <title>lodging</title>
+    <script src="_js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="_css/header.css">
+    <link rel="stylesheet" href="_css/lodging.css">
+    <script src="_js/nav_transparent.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="_css/wedPhone.css">
+   <script src="_js/lodgingBandB.js"></script>
+   <script src="_js/lodgingHostels.js"></script>
+   <script src="_js/lodgingHotels.js"></script>
+    <script src="_js/backToTop.js"></script>
+    <script src="_js/findThisCityIndex.js"></script>
+    <script src="_js/filtering.js"></script>
+    <script src="_js/filteringCreate.js"></script>
+    <script src="_js/addToFavorites.js"></script>
+    <script src="_js/chat.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+<script>
+</script>
+</head>
+<body>
+    <div class="body" id="id_body">
+        <nav>
+            <div class="navMain" id="id_navMain">
+                <div class="search">
+                    <input id="id_input" type="text" placeholder="Enter your search...">
+                    <button id="id_bt_search">
+                    <img  src="_images/glass.png">
+                    </button>
+                </div>
+                <a class="homeNav" href="main.html">דף הבית</a>
+                <div class="dropdown">
+                        <button class="class_area" id="id_area"> אזורים
+                                <i id="id_down" class="down"></i>
+                                </button>
+                        <div class="dropdown-content">
+                            <a href="north.html">צפון</a>
+                            <a href="telAvivAndCentral.html">מרכז</a>
+                            <a href="jerusalemAndSurroundingArea.html">ירושלים והסביבה</a>
+                            <a href="theDeadSea.html">ים המלח</a>
+                            <a href="south.html">דרום</a>
+                            <a href="eilat.html">אילת</a>
+                        </div>
+                    </div>
+                <a href="cities.html">ערים</a>
+                <a href="lodging.html">מקומות לינה</a>
+                <div style='padding-top:0;' class="favorites" id="id_favorites">
+                    <a onclick="openFavorites()"><span style='font-size:180%;color:yellow;padding-top:0;' onclick="openFavorites()">&starf;</span> מועדפים</a>
+                    
+                    <!-- <span onclick="openFavorites()"> מועדפים</span> -->
+                </div> 
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="webPhoneNav()">&#9776;</a> 
+            </div>
+        </nav>
+        <div id="id_sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeFavorites()">&times;</a>
+            <div class="favoritesIn">
+                <h2 style="color:white;text-align: center;">מועדפים</h2>
+                <img src="_images/trash.jpg" title="למחוק הכל" style='width: 20px;display: block;margin-left: auto;margin-right: auto;' onclick="deleteAllFavorites()">
+                <br>
+                <table style="color:white;text-align:right;" class="favoritesInTable" id="id_favoritesInTable">
+                    
+                </table>
+            </div>
+          </div>       
+        <header>           
+            <div class="header">
+                <div class="strip">
+                    <div class="stripPic">
+                        <!-- <img id="id_img" src="_images/picMain1.jpg" height= "400px">  -->
+                        <div class="image_caption">
+                            <h1>ברוכים הבאים לאתר התיירות בישראל</h1>
+                            <p>
+                                כאן תוכלו למצוא כמה נושאים שעשויים לעניין אותכם. 
+                            </p>
+                            <p>
+                                    תוכלו להישתמש באתר גם מהטלפון
+                            </p>
+                            <h2>בילוי נעים</h2>
+                        </div>  
+                    </div>
+                </div>
+            </div> 
+            <div class="messageMoved">
+                <h3>!!!שלום וברוכים הבאים לאתר שלי, בדף זה תוכלו לקבל מהמאגר את המידע הרלוונטי שתבקשו, תהנו</h3>
+            </div>    
+    </header>   
+        
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <main>
+        <div class="main">
+            <div class="lodgingAll">  
+                <h2 class="h2" style="font-family: Secular One, sans-serif;">מקומות לינה</h2>
+                <p style="text-align: center; font-family: Secular One, sans-serif;" >תלחצ/י על התיבה כדי לקבל יותר מידע על העיר</p>
+                <div class="filtering" id="id_filtering">
+                    <h3>מסנני חיפוש פופולריים</h3>
+                    <div class="filteringPopular" id="id_filteringPopular">
+                        <input name="vote" type="checkbox" value="כשר">
+                        <label for="vote">כשר</label><br>
+                        <input name="vote" type="checkbox" value="נגישות">
+                        <label for="vote">נגישות</label><br>
+                        <input name="vote" type="checkbox" value="אינטרנט אלחוטי">
+                        <label for="vote">אינטרנט אלחוטי</label><br>
+                        <input name="vote" type="checkbox" value="חנייה">
+                        <label for="vote">חנייה</label><br>
+                        <div class="addFilteringPopular" id="id_addFilteringPopular"></div>
+                    </div>
+                    <h3>אזור</h3>
+                    <input name="vote" type="checkbox" value="צפון">
+                    <label for="vote">צפון</label><br>
+                    <input name="vote" type="checkbox" value="תל אביב והמרכז">
+                    <label for="vote">תל אביב והמרכז</label><br>
+                    <input name="vote" type="checkbox" value="ירושלים והסביבה">
+                    <label for="vote">ירושלים והסביבה</label><br>
+                    <input name="vote" type="checkbox" value="יהודה והשומרון">
+                    <label for="vote">יהודה והשומרון</label><br>
+                    <input name="vote" type="checkbox" value="ים המלח">
+                    <label for="vote">ים המלח</label><br>
+                    <input name="vote" type="checkbox" value="דרום">
+                    <label for="vote">דרום</label><br>
+                    <input name="vote" type="checkbox" value="אילת">
+                    <label for="vote">אילת</label><br>
+                    <h3>סוג מקום האירוח</h3>
+                    <input name="vote" type="checkbox" class="checkbox_check_hotel" value="מלון">
+                    <label for="vote">מלונות</label><br>
+                    <input name="vote" type="checkbox" class="checkbox_check_BandB" value="צימר">
+                    <label for="vote">צימרים</label><br>
+                    <input name="vote" type="checkbox" class="checkbox_check_Hostel" value="אכסניה">
+                    <label for="vote">אכסניות</label><br>
+                    <input name="vote" type="checkbox" value="בית ספר שדה">
+                    <label for="vote">בית ספר שדה</label><br>
+                    <!-- <div class="addFilteringBox" id="id_addFilteringBox"></div> -->
+                    <div class="attractionsFiltering" id="id_attractionsFiltering"></div>
+                </div>
+                <div class="lodging" id="id_lodging"></div>
+                <div class="prevNext">
+                    <a class="prev" title="הקודם" onclick="localStoragePage(-1)" href="#">&laquo;</a>
+                    <a class="next" title="הבא" onclick="localStoragePage(1)" href="#">&raquo;</a>
+                </div>
+            </div>
+        </div>
+        <i class="material-icons open-button" style="font-size:48px;color:red" onclick="openForm()" > &#xe0b7;</i>
+            <div class="chat-popup" id="myForm">
+                <div class="form-container">
+                    <h3 style="text-align: right;">צ'אט</h3>
+                    <div class="containerAll" id="id_containerAll">
+                        <div class="containerBig1" id="id_containerBig1">
+                            </div>
+                            <div class="containerBig2" id="id_containerBig2">
+                            </div>
+                    </div>
+                    
+                    <label for="msg"><b style="text-align: right;" >הודעה</b></label>
+                    <textarea id="id_textarea" style="text-align: right;" placeholder="...הקלד הודעה" name="msg" required></textarea>
+
+                    <button class="btn" onclick="sendForm()">שלח</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">סגור</button>
+                </div>
+            </div>
+    </main>
+<footer>footer</footer>
+</div>
+</body>
+</html>

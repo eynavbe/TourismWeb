@@ -1,0 +1,971 @@
+/* .main{
+    cursor: url('../_images/mouse.png'), auto;
+} */
+.video{
+    
+    max-width: 500px;
+    min-height: 150px;
+    margin: 0 auto;
+    float: left;
+    padding: 5px;
+    margin-bottom: 20px;
+    /* border: 3px solid black; */
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.weather_recommendation{
+    
+    float: right;
+    padding:10px;
+    margin: 0 auto;
+    position: relative;
+    width: 510px;
+    min-height: 470px;
+    overflow: hidden;
+    /* border: 3px solid black; */
+    margin-bottom: 80px;
+}
+.weather_recommendation h3{
+    text-align: center;
+}
+.weather_recommendation .strip{
+    /* margin: */
+    height: 300px;
+    /* max-width: 480px; */
+    background-position: center;
+    color: white;
+    width: 100%;
+    position: relative;
+    /* z-index: -1; */
+    
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding:16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* .weather_recommendation.prev {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  .prev{
+      left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .weather_recommendation .prev:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+  .weather_recommendation .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .strip .boxWeather{
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    border: 3px solid black;
+    /* margin: 8px; */
+    margin-left: 40px;
+    position: relative;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+.boxWeather  .boxWeatherImg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    opacity: 0.5;
+}
+.boxWeather .boxWeatherName{
+    position: absolute;
+    top:15px;
+    /* right: 140px; */
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-size: 40px;
+}
+.boxWeather .boxWeatherDay{
+    font-size: 20px;
+    position: absolute;
+    top:90px;
+    width: 100%;
+    /* right: 160px; */
+}
+.boxWeather .boxWeatherConditionTemp{
+    font-size: 40px;
+    position: absolute;
+    top:130px;
+    right: 100px;
+}
+.boxWeather .circleWeather{
+    height: 6px;
+  width: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+  font-weight: normal;
+}
+.boxWeather.WeatherFahrenheit{
+    font-size: 15px;
+    font-weight: normal;
+}
+.boxWeather .boxWeatherskyImg{
+    position: absolute;
+    top:165px;
+    right: 200px;
+    width: 60px;
+    height: 60px;
+}
+.boxWeather .boxWeatherA{
+    font-size: 20px;
+    position: absolute;
+    top:270px;
+    /* width: 100%; */
+    /* text-align: center; */
+    right: 160px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    
+    text-decoration: underline;
+}
+.boxWeather .boxWeatherText{
+    font-size: 18px;
+    position: absolute;
+    top:300px;
+    right: 100px;
+    display: none;
+}
+
+
+.trackM{
+    float: right;
+    position: relative;
+    max-width: 650px;
+    min-height: 338px;
+    border: 3px solid black;
+    margin-bottom: 80px;
+}
+.trackM .boxTrack{
+    width: 100%;
+    height: 338px;
+    position: relative;
+    border: 3px solid black;
+}
+.boxTrack .boxImgTrack{
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.trackM .boxSpan{
+    cursor: pointer;
+}
+.bookmark1{
+    width: 40px;
+    height: 92px;
+    position: absolute;
+  top: 0;
+  left: 10px;
+  background: red;
+  word-break: break-all;
+}
+.bookmark2{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid red;
+    position: absolute;
+  top: 92px;
+  left: 10px;
+}
+.bookmark1Text{
+    width: 0;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
+}
+.boxTrack .boxDescriptionTrack{
+    width: 300px;
+    min-height: 220px;
+    position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  text-align: right;
+  opacity: 0.6;
+  padding: 3px;
+}
+.boxTrack .boxMoreThistrip{
+    position: absolute;
+  top: 240px;
+  right: 10px;
+}
+.trackM .boxTrackSmallRow{
+    height: 100px;
+    position: relative;
+    min-width: 600px;
+    border: 3px solid black;
+}
+/* .trackM .boxTrackSmallRow:after {
+    content: "";
+    display: table;
+    clear: both; 
+} */
+.boxTrackSmallRow .boxTrackSmall{
+    float: left;
+     width: 16.66%;
+    /*height: 100%; */
+    position: relative;
+    /* border: 3px solid black; */
+    margin: 0 auto;
+    height: 100%;
+    /* width: 100px; */
+    display: block;
+    overflow: hidden;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.boxTrackSmall .boxImgTrackSmall{
+    /* vertical-align: middle; */
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    
+}
+.boxImgTrackSmall:hover {
+  opacity: 1;
+}
+.boxImgTrackSmall.active{
+    opacity: 1;
+}
+
+
+.map{
+    float: left;
+    position: relative;
+    /* border: 3px solid black; */
+    margin-bottom: 80px;
+    text-align: center;
+}
+.mapPic{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+/* area :hover{
+    /* background-color: rgba(0,0,0,0.8);
+    opacity:0.2;
+} */
+/* area{ display:block;cursor: crosshair;
+} */
+/* .areaOne :hover{
+    background-color: rgba(0,0,0,0.8);
+} */
+area{
+    display: inline;
+    cursor: pointer;
+}
+
+/* .dropdown{
+overflow: hidden;} */
+
+
+.citiesM{
+    margin: 0 auto;
+    position: relative;
+    max-width: 980px;
+    min-height: 400px;
+    overflow: hidden;
+    /* border: 3px solid black;  */
+    margin-bottom: 80px;
+    text-align: center; 
+    padding-left: 10px;
+    float: left;
+    margin-left: 100px;
+}
+.h3{
+    text-align: center;
+}
+.citiesM .box{
+    margin: 0 auto;
+    float: left;
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.box a{
+    text-decoration: none;
+    cursor: pointer;
+     color: black; 
+} 
+.box .boxImg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+.box:hover .boxImg{
+    transform: scale(1.25);
+    transition: transform .25s ease;
+    
+}
+.box .boxName{
+    position: absolute;
+    top:40px;
+    left: 50px;
+}
+.box .boxBtn{
+    border-radius: 5px;
+    border: 3px solid #45a29e;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+    bottom:10px;
+    left: 80px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.boxBtn .boxSpan{
+    position: relative;
+    transition: 0.5s;
+}
+.boxBtn .boxSpan:after{
+    content: '\00bb';
+    transform: rotate(180deg);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+.boxBtn:hover .boxSpan{
+    padding-left: 25px;
+  }
+  .boxBtn:hover{
+    background-color:#45a29e;
+  }
+  
+  .boxBtn:hover .boxSpan:after {
+    opacity: 1;
+    left: 0;
+  }
+  .citiesM .moreCities{
+    width: 80px;
+      height: 30px;
+      /* border-bottom: 3px solid black; */
+      position: absolute;
+    bottom: 0;
+    left: 50%;
+    
+  }
+  .citiesM .moreCities a{
+    text-decoration: none;
+    cursor: pointer;
+     color: black; 
+     
+} 
+
+
+
+.lodgingM{
+    margin: 0 auto;
+    margin-left: 100px;
+    position: relative;
+    max-width: 980px;
+    min-height: 600px;
+    overflow: hidden;
+    margin-bottom: 80px;
+    text-align: center; 
+    padding-left: 10px;
+    float: left;
+}
+.h3{
+    text-align: center;
+}
+.lodgingM .boxLodgingMainHotels{
+    margin: 0 auto;
+    float: left;
+    height: 500px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    display: block;
+    overflow: hidden; 
+    margin-bottom: 50px;
+    /* transition: transform 10s; */
+}
+.boxLodgingMainHotels:hover{
+    /* margin-top: 100px; */
+    top: -50px;
+    height: 550px;
+    /* /* transform: scale(1.1);  */
+}
+.lodgingMH3{
+    margin-bottom: 50px;
+}
+.boxLodgingMainHotels:hover .boxLodgingMainHotelsTop{
+    background-color: black;
+}
+.boxLodgingMainHotels:hover .boxLodgingMainHotelsBtn{
+    background-color: #45a29e;
+}
+.boxLodgingMainHotels .boxLodgingMainHotelsTop{
+    height: 30%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    background-color: #c5c6c7;
+    color: #45a29e;
+    float: left;
+    /* overflow: hidden;display: block; */
+}
+.boxLodgingMainHotelsTop .boxLodgingMainHotelsTopName{
+    line-height: 30%;
+}
+.boxLodgingMainHotelsTop .boxLodgingMainHotelsTopAddress{
+    font-size: 18px;
+}
+.boxLodgingMainHotelsTop .boxLodgingMainHotelsTopBookmark1{
+    width: 30px;
+    height: 92px;
+    position: absolute;
+  top: 0;
+  left: 10px;
+  background: red;
+  color: black;
+}
+.boxLodgingMainHotelsTopBookmark2{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid red;
+    position: absolute;
+  top: 92px;
+  left: 10px;
+}
+.boxLodgingMainHotelsTopBookmark1Text{
+    font-size: 16px;
+    width: 0;
+    transform: rotate(-88deg);
+    position: absolute;
+    top: 50px;
+    left: 14px;
+  margin: 0;
+  padding: 0;
+  /* padding-top: 70px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  letter-spacing: 3px;
+}
+.boxLodgingMainHotelsDown{
+    height: 70%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    float: left;
+    /* display: block;
+    overflow: hidden; */
+    font-weight: bold;
+    font-size: 16px;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsDownImg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+/* .box:hover .boxImg{
+    transform: scale(1.25);
+    transition: transform .25s ease;
+    
+} */
+/* .boxLodgingMainHotelsDown .boxLodgingMainHotelsDownAddress{
+    position: absolute;
+    top:10px;
+    /* right: 20px; 
+    width: 100%;
+} */
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP1{
+    position: absolute;
+    top:30px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP2{
+    position: absolute;
+    top:60px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP3{
+    position: absolute;
+    top:90px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP4{
+    position: absolute;
+    top:120px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP5{
+    position: absolute;
+    top:150px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP6{
+    position: absolute;
+    top:180px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsP7{
+    position: absolute;
+    top:210px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsBtn{
+    /* border-radius: 10px; */
+    /* border: 3px solid blue; */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingMainHotelsDown .boxLodgingMainHotelsBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+.lodgingM .boxLodgingMainBandB{
+    margin: 0 auto;
+    float: left;
+    height: 500px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    display: block;
+    overflow: hidden; 
+    margin-bottom: 50px;
+    /* transition: transform 10s; */
+}
+.boxLodgingMainBandB:hover{
+    /* margin-top: 100px;
+    /* transform: scale(1.1);  */
+    top: -50px;
+    height: 550px;
+}
+.boxLodgingMainBandB:hover .boxLodgingMainBandBTop{
+    background-color: black;
+}
+.boxLodgingMainBandB:hover .boxLodgingMainBandBBtn{
+    background-color: #45a29e;
+}
+.boxLodgingMainBandB .boxLodgingMainBandBTop{
+    height: 30%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    color: #45a29e;
+    background-color: #c5c6c7;
+    float: left;
+    /* overflow: hidden;display: block; */
+}
+.boxLodgingMainBandBTop .boxLodgingMainBandBTopName{
+    line-height: 30%;
+}
+.BandBCityCircleRate{
+    height: 50px;
+  width: 50px;
+    /* position: absolute;
+  top: 10px;
+  left: 10px; */
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.BandBCityCircleRateText{
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.boxLodgingMainHotelsTop .boxLodgingMainHotelsTopAddress{
+    font-size: 18px;
+}
+.boxLodgingMainBandBTop .boxLodgingMainBandBTopBookmark1{
+    width: 30px;
+    height: 92px;
+    position: absolute;
+  top: 0;
+  left: 10px;
+  background: red;
+}
+.boxLodgingMainBandBTopBookmark2{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid red;
+    position: absolute;
+  top: 92px;
+  left: 10px;
+}
+.boxLodgingMainBandBTopBookmark1Text{
+    font-size: 16px;
+    width: 0;
+    transform: rotate(-88deg);
+  margin: 0;
+  padding: 0;
+  color: black;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.boxLodgingMainBandBDown{
+    height: 70%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    float: left;
+    /* display: block;
+    overflow: hidden; */
+    font-weight: bold;
+    font-size: 16px;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBDownImg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+/* .box:hover .boxImg{
+    transform: scale(1.25);
+    transition: transform .25s ease;
+    
+} */
+/* .boxLodgingMainBandBDown .boxLodgingMainBandBDownAddress{
+    position: absolute;
+    top:10px;
+    /* right: 20px; 
+    width: 100%;
+} */
+.boxLodgingMainBandBDown .boxLodgingMainBandBP1{
+    position: absolute;
+    top:40px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBP2{
+    position: absolute;
+    top:70px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBP3{
+    position: absolute;
+    top:100px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBP4{
+    position: absolute;
+    top:130px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBP5{
+    position: absolute;
+    top:160px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBP6{
+    position: absolute;
+    top:190px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBBtn{
+    /* border-radius: 10px; */
+    /* border: 3px solid blue; */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingMainBandBDown .boxLodgingMainBandBBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+
+.lodgingM .boxLodgingMainHostels{
+    margin: 0 auto;
+    float: left;
+    height: 500px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    display: block;
+    overflow: hidden; 
+    margin-bottom: 50px;
+    /* transition: transform 10s; */
+}
+.boxLodgingMainHostels:hover{
+    /* margin-top: 100px;
+    /* transform: scale(1.1);  */
+    top: -50px;
+    height: 550px;
+}
+.boxLodgingMainHostels:hover .boxLodgingMainHostelsTop{
+    background-color: black;
+}
+.boxLodgingMainHostels:hover .boxLodgingMainHostelsBtn{
+    background-color: #45a29e;
+}
+.boxLodgingMainHostels .boxLodgingMainHostelsTop{
+    height: 30%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    color:#45a29e;
+    background-color: #c5c6c7;
+    float: left;
+    /* overflow: hidden;display: block; */
+}
+.boxLodgingMainHostelsTop .boxLodgingMainHostelsTopName{
+    line-height: 30%;padding-left: 45px;
+}
+.boxLodgingMainHotelsTop .boxLodgingMainHotelsTopAddress{
+    font-size: 18px;
+}
+.boxLodgingMainHostelsTop .boxLodgingMainHostelsTopBookmark1{
+    width: 30px;
+    height: 92px;
+    position: absolute;
+  top: 0;
+  left: 10px;
+  background: red;
+}
+.boxLodgingMainHostelsTopBookmark2{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid red;
+    position: absolute;
+  top: 92px;
+  left: 10px;
+}
+.boxLodgingMainHostelsTopBookmark1Text{
+    font-size: 16px;
+    width: 0;
+    transform: rotate(-88deg);
+  margin: 0;
+  padding: 0;
+  color:black;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+.boxLodgingMainHostelsDown{
+    height: 70%;
+    width: 100%;
+    border: 3px solid black;
+    position: relative;
+    float: left;
+    /* display: block;
+    overflow: hidden; */
+    font-weight: bold;
+    font-size: 16px;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsDownImg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+/* .box:hover .boxImg{
+    transform: scale(1.25);
+    transition: transform .25s ease;
+    
+} */
+/* .boxLodgingMainHostelsDown .boxLodgingMainHostelsDownAddress{
+    position: absolute;
+    top:10px;
+    /* right: 20px; 
+    width: 100%;
+} */
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP1{
+    position: absolute;
+    top:20px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP2{
+    position: absolute;
+    top:50px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP3{
+    position: absolute;
+    top:80px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP4{
+    position: absolute;
+    top:110px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP5{
+    position: absolute;
+    top:140px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP6{
+    position: absolute;
+    top:170px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP7{
+    position: absolute;
+    top:200px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsP8{
+    position: absolute;
+    top:230px;
+    /* right: 20px; */
+    width: 100%;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsBtn{
+    /* border-radius: 10px; */
+    /* border: 3px solid blue; */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    position: absolute;
+    bottom:10px;
+    left: 70px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: black;
+}
+.boxLodgingMainHostelsDown .boxLodgingMainHostelsBtn a{
+    text-decoration: none;
+    cursor: pointer;
+     color: white; 
+} 
+
+
+/* .boxBtn .boxSpan{
+    position: relative;
+    transition: 0.5s;
+}
+.boxBtn .boxSpan:after{
+    content: '\00bb';
+    transform: rotate(180deg);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+.boxBtn:hover .boxSpan{
+    padding-left: 25px;
+  }
+  .boxBtn:hover{
+    background-color: blue;
+  }
+  
+  .boxBtn:hover .boxSpan:after {
+    opacity: 1;
+    left: 0;
+  } */
+  .lodgingM .moreLodging{
+      width: 100px;
+      height: 30px;
+      /* border-bottom: 3px solid black; */
+      position: absolute; 
+     bottom: 0; 
+     left: 50%;
+  }
+  .lodgingM .moreLodging a{
+    text-decoration: none;
+    cursor: pointer;
+     color: black; 
+     
+} 
+
+
+
